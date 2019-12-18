@@ -32,20 +32,34 @@ $window = $(window);
 //     sectionPositions.join()
 // }
 
+window.onscroll = function() {
+    stickyNav()
+};
 
-$(window).scroll(function() {
-    var position = $(this).scrollTop();
-    for (let x = 1; x < 10; x++) {
-        var sectionTop = Math.floor($("#section-" + x).offset().top);
-        // console.log("top:" + sectionTop);
-        var sectionBottom = Math.floor($("#section-" + x).offset().top + $("#section-" + x).outerHeight());
-        // console.log(x);
-        if ( position >= sectionTop && position <= sectionBottom) {
-            console.log(x + ' is in top');
-            $('#title h1, #title h2').attr('id', 'font-' + x);
-        }
-    }
-});
+var nav = document.getElementsByTagName("nav")[0];
+var sticky = nav.offsetTop;
+
+function stickyNav() {
+  if (window.pageYOffset >= sticky) {
+    nav.classList.add("sticky")
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
+
+// $(window).scroll(function() {
+//     var position = $(this).scrollTop();
+//     for (let x = 1; x < 10; x++) {
+//         var sectionTop = Math.floor($("#section-" + x).offset().top);
+//         // console.log("top:" + sectionTop);
+//         var sectionBottom = Math.floor($("#section-" + x).offset().top + $("#section-" + x).outerHeight());
+//         // console.log(x);
+//         if (position >= sectionTop && position <= sectionBottom) {
+//             console.log(x + ' is in top');
+//             $('#title h1, #title h2').attr('id', 'font-' + x);
+//         }
+//     }
+// });
 
 
 function imageViewer(img) {
