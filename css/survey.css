@@ -123,6 +123,7 @@ nav a {
     display: none;
     border-style: solid;
     border-width: 5px;
+    z-index: 1000;
 }
 nav a:hover .key {
     display: block;
