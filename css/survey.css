@@ -54,6 +54,18 @@ a {text-decoration: none; color: #000;}
 .palette-10 {background: var(--palette-10); border-color: var(--palette-10);}
 .palette-11 {background: var(--palette-11); border-color: var(--palette-11);}
 
+/* Header font change */
+#font-1 {font-family: var(--font-1); font-size: 15px !important;}
+#font-2 {font-family: var(--font-2); font-size: 13px;}
+#font-3 {font-family: var(--font-3); font-size: 15px !important;}
+#font-4 {font-family: var(--font-4);}
+#font-5 {font-family: var(--font-5); font-size: 13px;}
+#font-6 {font-family: var(--font-6);}
+#font-7 {font-family: var(--font-7);}
+#font-8 {font-family: var(--font-8);}
+#font-9 {font-family: var(--font-9);}
+#font-10 {font-family: var(--font-10);}
+
 /* Header */
 header {
     position: fixed;

@@ -35,11 +35,15 @@ $window = $(window);
 
 $(window).scroll(function() {
     var position = $(this).scrollTop();
-    for (let x = 1; x < 3; x++) {
+    for (let x = 1; x < 10; x++) {
         var sectionTop = Math.floor($("#section-" + x).offset().top);
-        console.log("top:" + sectionTop);
+        // console.log("top:" + sectionTop);
         var sectionBottom = Math.floor($("#section-" + x).offset().top + $("#section-" + x).outerHeight());
-        console.log(x);
+        // console.log(x);
+        if ( position >= sectionTop && position <= sectionBottom) {
+            console.log(x + ' is in top');
+            $('#title h1, #title h2').attr('id', 'font-' + x);
+        }
     }
 });
 
