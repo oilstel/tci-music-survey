@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('LucidaGrande.eot');
+    src: url('LucidaGrande.eot?#iefix') format('embedded-opentype'),
+        url('LucidaGrande.woff2') format('woff2'),
+        url('LucidaGrande.woff') format('woff'),
+        url('LucidaGrande.ttf') format('truetype'),
+        url('LucidaGrande.svg#LucidaGrande') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+

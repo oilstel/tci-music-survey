@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Geneva';
+    src: url('Geneva.eot');
+    src: url('Geneva.eot?#iefix') format('embedded-opentype'),
+        url('Geneva.woff2') format('woff2'),
+        url('Geneva.woff') format('woff'),
+        url('Geneva.ttf') format('truetype'),
+        url('Geneva.svg#Geneva') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

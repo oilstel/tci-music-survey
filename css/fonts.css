@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Print Char 21';
+    src: url('../fonts/print-char-21/PrintChar21.eot');
+    src: url('../fonts/print-char-21/PrintChar21.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/print-char-21/PrintChar21.woff2') format('woff2'),
+        url('../fonts/print-char-21/PrintChar21.woff') format('woff'),
+        url('../fonts/print-char-21/PrintChar21.ttf') format('truetype'),
+        url('../fonts/print-char-21/PrintChar21.svg#PrintChar21') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ChiKareGo';
+    src: url('../fonts/chi-kare-go/ChiKareGo.eot');
+    src: url('../fonts/chi-kare-go/ChiKareGo.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chi-kare-go/ChiKareGo.woff2') format('woff2'),
+        url('../fonts/chi-kare-go/ChiKareGo.woff') format('woff'),
+        url('../fonts/chi-kare-go/ChiKareGo.ttf') format('truetype'),
+        url('../fonts/chi-kare-go/ChiKareGo.svg#ChiKareGo') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Shaston Hi 320';
+    src: url('../fonts/shaston-hi-320/ShastonHi320.eot');
+    src: url('../fonts/shaston-hi-320/ShastonHi320.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/shaston-hi-320/ShastonHi320.woff2') format('woff2'),
+        url('../fonts/shaston-hi-320/ShastonHi320.woff') format('woff'),
+        url('../fonts/shaston-hi-320/ShastonHi320.ttf') format('truetype'),
+        url('../fonts/shaston-hi-320/ShastonHi320.svg#ShastonHi320') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+/* TruthFB font is loading from Adobe Fonts on index.html */
+@font-face {
+    font-family: 'Nu Sans Mono Demo';
+    src: url('../fonts/nu-sans-mono/NuSansMonoDemo.eot');
+    src: url('../fonts/nu-sans-mono/NuSansMonoDemo.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/nu-sans-mono/NuSansMonoDemo.woff2') format('woff2'),
+        url('../fonts/nu-sans-mono/NuSansMonoDemo.woff') format('woff'),
+        url('../fonts/nu-sans-mono/NuSansMonoDemo.ttf') format('truetype'),
+        url('../fonts/nu-sans-mono/NuSansMonoDemo.svg#NuSansMonoDemo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriad-pro/MyriadPro-Regular.eot');
+    src: url('../fonts/myriad-pro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/myriad-pro/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/myriad-pro/MyriadPro-Regular.woff') format('woff'),
+        url('../fonts/myriad-pro/MyriadPro-Regular.ttf') format('truetype'),
+        url('../fonts/myriad-pro/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Geneva';
+    src: url('../fonts/geneva/Geneva.eot');
+    src: url('../fonts/geneva/Geneva.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/geneva/Geneva.woff2') format('woff2'),
+        url('../fonts/geneva/Geneva.woff') format('woff'),
+        url('../fonts/geneva/Geneva.ttf') format('truetype'),
+        url('../fonts/geneva/Geneva.svg#Geneva') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('../fonts/lucida-grande/LucidaGrande.eot');
+    src: url('../fonts/lucida-grande/LucidaGrande.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lucida-grande/LucidaGrande.woff2') format('woff2'),
+        url('../fonts/lucida-grande/LucidaGrande.woff') format('woff'),
+        url('../fonts/lucida-grande/LucidaGrande.ttf') format('truetype'),
+        url('../fonts/lucida-grande/LucidaGrande.svg#LucidaGrande') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFProText';
+    src: url('../fonts/sf-pro-text/SFProText-Regular.eot');
+    src: url('../fonts/sf-pro-text/SFProText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/sf-pro-text/SFProText-Regular.woff2') format('woff2'),
+        url('../fonts/sf-pro-text/SFProText-Regular.woff') format('woff'),
+        url('../fonts/sf-pro-text/SFProText-Regular.ttf') format('truetype'),
+        url('../fonts/sf-pro-text/SFProText-Regular.svg#SFProText-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
