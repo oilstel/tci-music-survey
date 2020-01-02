@@ -271,9 +271,9 @@ ul {
 }
 .quote {
     width: 400px;
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px;
-    line-height: 1.5em;
+    line-height: 2em;
     cursor: zoom-in;
 }
 .quote a {
