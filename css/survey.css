@@ -10,12 +10,14 @@ html, body{
 }
 
 /* Globals */
-h1, h2, h3, h4, a, ul, ol, li, p {
+h1, h2, h3, h4, a, ul, ol, li, p, em {
     font-size: 18px;
     font-weight: normal;
+    font-style: normal;
     margin: 0;
     padding: 0;
 }
+.clear {clear: both;}
 a {text-decoration: none; color: #000;}
 :root {
     --palette-0: #999999;
@@ -54,17 +56,30 @@ a {text-decoration: none; color: #000;}
 .palette-10 {background: var(--palette-10); border-color: var(--palette-10);}
 .palette-11 {background: var(--palette-11); border-color: var(--palette-11);}
 
+.font-color-0 {color: var(--palette-0);}
+.font-color-1 {color: var(--palette-1);}
+.font-color-2 {color: var(--palette-2);}
+.font-color-3 {color: var(--palette-3);}
+.font-color-4 {color: var(--palette-4);}
+.font-color-5 {color: var(--palette-5);}
+.font-color-6 {color: var(--palette-6);}
+.font-color-7 {color: var(--palette-7);}
+.font-color-8 {color: var(--palette-8);}
+.font-color-9 {color: var(--palette-9);}
+.font-color-10 {color: var(--palette-10);}
+.font-color-11 {color: var(--palette-11);}
+
 /* Header font change */
-#font-1 {font-family: var(--font-1); font-size: 25px !important;}
-#font-2 {font-family: var(--font-2); font-size: 13px;}
-#font-3 {font-family: var(--font-3); font-size: 15px !important;}
-#font-4 {font-family: var(--font-4);}
-#font-5 {font-family: var(--font-5); font-size: 13px;}
-#font-6 {font-family: var(--font-6);}
-#font-7 {font-family: var(--font-7);}
-#font-8 {font-family: var(--font-8);}
-#font-9 {font-family: var(--font-9);}
-#font-10 {font-family: var(--font-10);}
+.font-1 {font-family: var(--font-1); font-size: 25px !important;}
+.font-2 {font-family: var(--font-2); font-size: 13px;}
+.font-3 {font-family: var(--font-3); font-size: 15px !important;}
+.font-4 {font-family: var(--font-4);}
+.font-5 {font-family: var(--font-5); font-size: 13px;}
+.font-6 {font-family: var(--font-6);}
+.font-7 {font-family: var(--font-7);}
+.font-8 {font-family: var(--font-8);}
+.font-9 {font-family: var(--font-9);}
+.font-10 {font-family: var(--font-10);}
 
 /* Header */
 header {
@@ -101,7 +116,7 @@ nav {
     width: 100%;
 }
 nav a {
-    padding: 1.2em;
+    padding: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,6 +127,20 @@ nav a {
     top: 0;
     z-index: 1000;
 }
+em {
+    padding: 8px;
+    border: 1px solid transparent;
+}
+em.current {
+    border: 1px solid #000;
+    border-radius: 100%;
+}
+/* main {
+    padding-top: 200px !important;
+}
+section:nth-child(1) {
+    padding-top: 0;
+} */
 /* Nav Keys */
 .key {
     position: absolute;
@@ -145,6 +174,9 @@ nav a div {line-height: 1.3;}
 /* Content */
 main {
     display: block;
+}
+main a {
+    text-decoration: underline;
 }
 h2, h3, p, ul li, .snapshot {
     line-height: 1.5em;
@@ -222,6 +254,34 @@ ul {
     border: 5px solid #808080;
 }
 
+/* Quotes */
+#quote-cloud {
+    margin: 4em 0;
+    position: relative;
+    /* height: 800px; */
+    /* background-color: red; */
+    display: block;
+}
+.quote {
+    width: 400px;
+    font-size: 10px;
+    padding: 5px;
+    line-height: 1.5em;
+    cursor: zoom-in;
+}
+.quote a {
+    text-decoration: underline;
+}
+.quote:hover {
+    animation-name: quote-enlarge;
+    animation-duration: .1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes quote-enlarge {
+    /* 0% {font-size: red;} */
+    100% {font-size: 18px;}
+}
 @media(max-width: 1200px) {
     #title h1 {font-size: 40px;}
     #title h2 {font-size: 18px;}
@@ -243,4 +303,12 @@ ul {
 @media(max-width: 1000px) {
     #title h1 {font-size: 30px;}
     #title h2 {font-size: 15px;}
+}
+@media(max-width: 565px) {
+    .quote {
+        width: 100%;
+        margin-left: 0 !important;
+        font-size: 18px;
+        cursor: text;
+    }
 }
