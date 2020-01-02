@@ -17,6 +17,7 @@ h1, h2, h3, h4, a, ul, ol, li, p, em {
     margin: 0;
     padding: 0;
 }
+figure {margin: 0; padding: 0;}
 .clear {clear: both;}
 a {text-decoration: none; color: #000;}
 :root {
@@ -230,6 +231,10 @@ ul {
     font-style: italic;
 }
 
+.graph:hover #image-viewer {
+    display: block;
+}
+
 /* Graphs */
 .graph {
     max-width: 300px;
@@ -237,6 +242,7 @@ ul {
     right: 80px;
     z-index: 1;
 }
+.graph figure { margin-bottom: 10px; cursor: zoom-in; }
 
 /* Image Viewer */
 #image-viewer {
@@ -252,6 +258,7 @@ ul {
     max-width: 70vw;
     display: relative;
     border: 5px solid #808080;
+    cursor: zoom-out;
 }
 
 /* Quotes */
@@ -295,10 +302,13 @@ ul {
     }
     .graph {
         max-width: 600px;
-        margin: 0 auto;
+        margin: 20px auto;
         padding: 0;
     }
-    .graph img {width: 100%;}
+    .graph figure {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 @media(max-width: 1000px) {
     #title h1 {font-size: 30px;}

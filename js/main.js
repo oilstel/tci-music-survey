@@ -41,17 +41,24 @@ function stickyNav() {
   }
 }
 
-
 function imageViewer(img) {
-    var image_viewer = document.getElementById("image-viewer");
-    var image_viewer_img = document.getElementById("image-viewer-img");
+    if (document.body.clientWidth >= 1200) {
+      var image_viewer = document.getElementById("image-viewer");
+      var image_viewer_img = document.getElementById("image-viewer-img");
 
-    image_viewer.style.display = "block";
-    image_viewer_img.src = img.src;
+      console.log(img.getElementsByTagName('img')[0].src)
+  
+      image_viewer.style.display = "block";
+      image_viewer_img.src = img.getElementsByTagName('img')[0].src;
 
-    img.onmouseout = function() { 
-        image_viewer.style.display = "none";
+      console.log(image_viewer_img.onmouseout)
     }
+}
+
+document.getElementById("image-viewer").addEventListener('click', () => imageHide())
+
+function imageHide() {
+  document.getElementById("image-viewer").style.display = "none";
 }
 
 function quotes() {
