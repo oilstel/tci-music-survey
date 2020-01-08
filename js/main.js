@@ -46,10 +46,10 @@ function imageViewer(img) {
       var image_viewer = document.getElementById("image-viewer");
       var image_viewer_img = document.getElementById("image-viewer-img");
 
-      console.log(img.getElementsByTagName('img')[0].src)
+      console.log(img.src)
   
       image_viewer.style.display = "block";
-      image_viewer_img.src = img.getElementsByTagName('img')[0].src;
+      image_viewer_img.src = img.src;
 
       console.log(image_viewer_img.onmouseout)
     }

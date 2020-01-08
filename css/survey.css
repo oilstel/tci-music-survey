@@ -212,6 +212,11 @@ ul {
     list-style-type: none;
 }
 
+/* Overrides */
+#section-6 {
+    padding-bottom: 27em;
+}
+
 /* Snapshot */
 .snapshot {
     background: #F2F048;
@@ -242,7 +247,25 @@ ul {
     right: 80px;
     z-index: 1;
 }
-.graph figure { margin-bottom: 10px; cursor: zoom-in; }
+figure {
+    margin-bottom: 2em;
+    cursor: zoom-in;
+}
+.caption {
+    font-family: 'Courier New', Courier, monospace;
+    color: #535353;
+    margin-bottom: 1em;
+}
+.caption h2 {
+    text-transform: uppercase;
+}
+.caption h2, .caption p {
+    /* margin: initial;
+    padding: initial; */
+    right: 0;
+    font-size: 16px;
+    line-height: 1.4em;
+}
 
 /* Image Viewer */
 #image-viewer {
@@ -309,6 +332,7 @@ ul {
         width: 100%;
         margin-bottom: 10px;
     }
+    #section-6 {padding-bottom: 4em !important;}
 }
 @media(max-width: 1000px) {
     #title h1 {font-size: 30px;}
