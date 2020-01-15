@@ -203,7 +203,7 @@ ul {
 
 /* Overrides */
 #section-6 {
-    padding-bottom: 27em;
+    padding-bottom: 16em;
 }
 
 /* Snapshot */
@@ -317,8 +317,8 @@ figure {
     display: block;
 }
 .quote {
-    width: 400px;
-    font-size: 12px;
+    max-width: 600px;
+    font-size: 18px;
     padding: 5px;
     line-height: 2em;
     cursor: zoom-in;
@@ -334,7 +334,7 @@ figure {
 }
 @keyframes quote-enlarge {
     /* 0% {font-size: red;} */
-    100% {font-size: 18px;}
+    100% {font-size: 25px;}
 }
 @media(max-width: 1200px) {
     #title h1 {font-size: 40px;}
