@@ -296,16 +296,20 @@ figure {
     display: none;
     position: fixed;
     z-index: 2000;
-    top: 50%;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: zoom-out;
 }
 #image-viewer img {
-    max-width: 70vw;
-    display: relative;
+    max-width: 60vw;
+    position: absolute;
     border: 5px solid #808080;
-    cursor: zoom-out;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
 }
 
 /* Quotes */
@@ -357,6 +361,7 @@ figure {
         margin-bottom: 10px;
     }
     #section-6 {padding-bottom: 4em !important;}
+    figure {cursor: initial}
 }
 @media(max-width: 1000px) {
     #title h1 {font-size: 30px;}
