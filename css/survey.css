@@ -366,6 +366,13 @@ figure {
 @media(max-width: 1000px) {
     #title h1, main h1 {font-size: 30px;}
     #title h2 {font-size: 15px;}
+    nav a {padding: 0;}
+    nav a:nth-child(1) {display: none;}
+    nav a:nth-child(12) {
+        grid-column: 5/7;
+        grid-row: 2/3;
+    }
+    nav {grid-template-columns: repeat(6, minmax(10px, 1fr));}
 }
 @media(max-width: 565px) {
     .quote {
@@ -374,13 +381,6 @@ figure {
         font-size: 18px;
         cursor: text;
     }
-    nav a {padding: 0;}
-    nav a:nth-child(1) {display: none;}
-    nav a:nth-child(12) {
-        grid-column: 5/7;
-        grid-row: 2/3;
-    }
-    nav {grid-template-columns: repeat(6, minmax(10px, 1fr));}
     section {padding: 2em 1em;}
     main h1 {padding: .5em;}
     #title h1, main h1 {font-size: 25px;}
